@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Chat.scss";
-import sa from "../../assets/img/sa.JPG";
+import fon from "../../assets/img/fon.jpg";
 const Chat = () => {
+    const [count, setCount] = useState(4)
   return (
     <section className="chat_wrapper">
       <div className="back_block">
@@ -10,6 +11,12 @@ const Chat = () => {
           <Link to="/" className="chat_link">
             BACK
           </Link>
+        </button>
+
+        <button 
+        onClick={() => setCount(count + 1)}
+        className="us_button">
+          {count} <span>US</span>
         </button>
       </div>
       <div className="chat_container">
@@ -26,7 +33,28 @@ const Chat = () => {
               <p className="ss">T</p>
               <p className="ss">O</p>
             </div>
-            <div></div>
+            <div className="chat_messenger">
+              <div className="messenger">
+                <p className="user">User:</p>
+                <p className="text">text</p>
+              </div>
+              <div className="messenger">
+                <p className="user">User:</p>
+                <img src={fon} alt="" />
+              </div>
+              <div className="messenger_me">
+                <p className="user">User:</p>
+                <p className="text">text</p>
+              </div>
+              <div className="messenger">
+                <p className="user">User:</p>
+                <p className="text">text</p>
+              </div>
+              <div className="messenger_me">
+                <p className="user">User:</p>
+                <p className="text">text</p>
+              </div>
+            </div>
             <div className="chat_line">
               <p>S</p>
               <p>A</p>
@@ -39,7 +67,7 @@ const Chat = () => {
             <form className="input_block">
               <input
                 type="text"
-                placeholder="NARUTO....."
+                placeholder="Enter your message"
                 className="chat_input"
               />
               <div className="form_buttom">
@@ -57,18 +85,62 @@ const Chat = () => {
             <div className="online_header">
               <p> ONLINE 3</p>
             </div>
-            <div className="online_user">
-                <p>User</p>
+            <div className="online_scroll">
+              <div className="online_user">
+                <p>Name</p>
                 <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
             </div>
           </div>
           <div className="chat_offline">
             <div className="online_header">
-              <p>OFFLINE</p>
+              <p>LAST CHAT</p>
             </div>
-            <div className="online_user">
-                <p>CHATY</p>
+            <div className="online_scroll">
+              <div className="online_user">
+                <p>Name</p>
                 <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
             </div>
           </div>
         </div>

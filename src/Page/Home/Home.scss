@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+.home_wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 25px;
+        color: rgba(0, 0, 0, 1);
+    }
+    .home_block {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+
+    }
+
+    .news_block,
+    .notActive1 {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        background-size: 100%;
+        background-image: url("../../assets/img/rick.webp");
+        transition: 0.5s;
+        background-position-y: -1000px;
+        background-position-x: -1000px;
+        background-repeat: no-repeat;
+
+    }
+
+    .chat_block,
+    .notActive2 {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        background-size: 100%;
+        background-image: url("../../assets/img/naruto.gif");
+        transition: 0.5s;
+        background-position-y: -1000px;
+        background-position-x: 1000px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .user_block,
+    .notActive3 {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        background-size: 100%;
+        background-image: url("../../assets/img/mar.gif");
+        transition: 0.5s;
+        background-position-y: 1000px;
+        background-position-x: -1000px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+    .game_block,
+    .notActive4 {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        background-size: 100%;
+        background-image: url("../../assets/img/dc.gif");
+        transition: 0.5s;
+        background-position-y: 1000px;
+        background-position-x: 1000px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .active1 {
+        background-position-x: 0px;
+        background-position-y: 0px;
+        transition: 0.5s;
+    }
+
+    .active2 {
+        background-position-x: 0px;
+        background-position-y: 0px;
+        transition: 0.5s;
+    }
+    .active3 {
+        background-position-x: 0px;
+        background-position-y: 0px;
+        transition: 0.5s;
+    }
+    
+    .active4 {
+        background-position-x: 0px;
+        background-position-y: 0px;
+        transition: 0.5s;
+    }
+}

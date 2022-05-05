@@ -1,12 +1,15 @@
-import React from 'react';
-
+import React from "react";
+import { Link } from "react-router-dom";
+import './Home.scss'
 const Home = () => {
-    return (
-        <div>
-          <p>sadsadsad</p>  
-          <p>sadasddasd</p>
-        </div>
-    );
+  return (
+    <div>
+      <div><Link to="/">НОВОСТИ</Link></div>
+      <div><Link to="/chat">ЧАТ</Link></div>
+      <div><Link to="/">USERv</Link></div>
+      <div>СКОРО...</div>
+    </div>
+  );
 };
 
-export default Home;<p>sadsadsad</p>
+export default Home;

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Chat.scss";
 import fon from "../../assets/img/fon.jpg";
 const Chat = () => {
-    const [count, setCount] = useState(4)
+  const [count, setCount] = useState(4);
   return (
     <section className="chat_wrapper">
       <div className="back_block">
@@ -13,9 +13,7 @@ const Chat = () => {
           </Link>
         </button>
 
-        <button 
-        onClick={() => setCount(count + 1)}
-        className="us_button">
+        <button onClick={() => setCount(count + 1)} className="us_button">
           {count} <span>US</span>
         </button>
       </div>
@@ -55,7 +53,7 @@ const Chat = () => {
                 <p className="text">text</p>
               </div>
             </div>
-            <div className="chat_line">
+            <div className="chat_line2">
               <p>S</p>
               <p>A</p>
               <p>S</p>

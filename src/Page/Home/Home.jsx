@@ -9,44 +9,97 @@ const Home = () => {
   const [isActive4, setIsActive4] = useState("false");
 
   return (
+    // <div className="home_wrapper">
+    //   <div className={`news_block ${isActive1 ? "active1" : "notActive1"}`}>
+    //     <span
+    //       onMouseEnter={() => setIsActive1(true)}
+    //       onMouseLeave={() => setIsActive1(false)}
+    //     >
+    //       <Link to="/" className="news">
+    //         НОВОСТИ
+    //       </Link>
+    //     </span>
+    //   </div>
+    //   <div className={`chat_block ${isActive2 ? "active2" : "notActive2"}`}>
+    //     <span
+    //       onMouseEnter={() => setIsActive2(true)}
+    //       onMouseLeave={() => setIsActive2(false)}
+    //     >
+    //       <Link to="/chat" className="elegantshadow">
+    //       Elegant Shadow
+    //       </Link>
+    //     </span>
+    //   </div>
+    //   <div className={`user_block ${isActive3 ? "active3" : "notActive3"}`}>
+    //     <span
+    //       onMouseEnter={() => setIsActive3(true)}
+    //       onMouseLeave={() => setIsActive3(false)}
+    //     >
+    //       <Link to="/" className="user">
+    //         USER
+    //       </Link>
+    //     </span>
+    //   </div>
+    //   <div className={`game_block ${isActive4 ? "active3" : "notActive3"}`}>
+    //     <span
+    //       onMouseEnter={() => setIsActive4(true)}
+    //       onMouseLeave={() => setIsActive4(false)}
+    //     >
+    //       <Link to="/" className="game">
+    //         СКОРО..
+    //       </Link>
+    //     </span>
+    //   </div>
+    // </div>
     <div className="home_wrapper">
-      <div className={`news_block ${isActive1 ? "active1" : "notActive1"}`}>
-        <span
-          onMouseEnter={() => setIsActive1(true)}
-          onMouseLeave={() => setIsActive1(false)}
-        >
-          <Link to="/" className="news">
-            НОВОСТИ
+      
+      <div class="stage">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+      </div>
+      <div className="news_block">
+        <span>
+          <Link to="/" className="elegantshadow">
+            NEWS
           </Link>
         </span>
       </div>
-      <div className={`chat_block ${isActive2 ? "active2" : "notActive2"}`}>
-        <span
-          onMouseEnter={() => setIsActive2(true)}
-          onMouseLeave={() => setIsActive2(false)}
-        >
-          <Link to="/chat" className="chat">
-            ЧАТ
+      <div className="chat_block">
+        <span>
+          <Link to="/chat" className=" insetshadow">
+            CHAT
           </Link>
         </span>
       </div>
-      <div className={`user_block ${isActive3 ? "active3" : "notActive3"}`}>
-        <span
-          onMouseEnter={() => setIsActive3(true)}
-          onMouseLeave={() => setIsActive3(false)}
-        >
-          <Link to="/" className="user">
-            USER
+      <div className="user_block">
+        <span>
+          <Link to="/" className="deepshadow">
+            USERS
           </Link>
         </span>
       </div>
-      <div className={`game_block ${isActive4 ? "active3" : "notActive3"}`}>
-        <span
-          onMouseEnter={() => setIsActive4(true)}
-          onMouseLeave={() => setIsActive4(false)}
-        >
-          <Link to="/" className="game">
-            СКОРО..
+      <div className="soon_block">
+        <span>
+          <Link to="/" className="retroshadow">
+            SOON...
           </Link>
         </span>
       </div>

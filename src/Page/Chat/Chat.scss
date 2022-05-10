@@ -5,8 +5,7 @@
 .chat_wrapper {
     width: 100vw;
     height: 100vh;
-    background-image: url(../../assets/img/fon.jpg);
-    background-size: cover;
+    background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
     padding: 20px;
 
     .back_block {
@@ -14,44 +13,66 @@
         width: 100%;
         margin-bottom: 15px;
         display: flex;
+        align-items: center;
         justify-content: space-between;
 
         .back_button {
-            width: 120px;
+            width: auto;
             height: 100%;
-            background-color: rgb(157, 10, 255);
-            border-radius: 50% 50% 50% 50% / 0% 100% 0% 100%;
-            border: 4px solid rgb(255, 119, 0);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            .triangle-left {
+                width: 0;
+                height: 0;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-right: 50px solid #0059ac;
+                transition: 0.5s;
+            }
+            .triangle-left:hover{
+                width: 0;
+                height: 0;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-right: 50px solid #0084ff;
+                transition: 0.5s;
+            }  
+            .triangle-right {
+                width: 0;
+                height: 0;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-left: 50px solid #0059ac;
+                transition: 0.5s;
+            }  
+            .triangle-right:hover {
+                width: 0;
+                height: 0;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-left: 50px solid #0084ff;
+                transition: 0.5s;
+            }   
         }
+
         .us_button {
-            width: 120px;
-            height: auto;
-            background-color: rgb(157, 10, 255);
-            border: 4px solid rgb(255, 119, 0);
-            border-radius: 50% 50% 50% 50% / 100% 0% 100% 0%;
+            width: auto;
+            height: 100%;
+            border: none;
             font-family: 'Bangers', cursive;
             font-weight: 400;
-            font-size: 28px;
+            font-size: 40px;
             color: rgb(255, 119, 0);
-            span{
+            background-color: rgba(245, 222, 179, 0);
+            span {
                 font-family: 'Bangers', cursive;
                 font-weight: 400;
                 font-size: 28px;
-                color: #FFFFFF;
+                color: #000000;
             }
         }
 
-        .chat_link {
-            font-family: 'Bangers', cursive;
-            font-weight: 400;
-            font-size: 28px;
-            color: #FFFFFF;
-            text-decoration: none;
-        }
+
     }
 
     .chat_container {
@@ -59,7 +80,6 @@
         height: calc(100% - 70px);
         display: flex;
         justify-content: space-between;
-
 
         .chat_block {
             height: 100%;
@@ -71,7 +91,7 @@
             .chat_header {
                 width: 100%;
                 height: 55px;
-                background: linear-gradient(90deg, rgb(255, 119, 0), rgb(157, 10, 255));
+                background: radial-gradient(circle, #1f4f96, #1b2949, #000);
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -81,7 +101,7 @@
                     font-family: 'Lexend Exa', sans-serif;
                     font-weight: 500;
                     font-size: 28px;
-                    color: rgba(255, 255, 255, 0.7);
+                    color: white;
 
                 }
             }
@@ -96,37 +116,39 @@
                     width: 8px;
                     height: 100%;
                     padding: 50px 0;
-                    background: rgb(255, 119, 0);
+                    background: radial-gradient(circle, #1f4f96, #1b2949, #000);
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     font-size: 10px;
                     font-weight: 900;
                     font-family: 'Lexend Exa', sans-serif;
-                    color: rgba(255, 255, 255, 0.7);
+                    color: white;
                     writing-mode: vertical-rl;
                     overflow: hidden;
                 }
+
                 .chat_line2 {
                     width: 8px;
                     height: 100%;
                     padding: 50px 0;
-                    background: rgb(157, 10, 255);
+                    background: radial-gradient(circle, #1f4f96, #1b2949, #000);
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     font-size: 10px;
                     font-weight: 900;
                     font-family: 'Lexend Exa', sans-serif;
-                    color: rgba(255, 255, 255, 0.5);
+                    color: white;
                     writing-mode: vertical-rl;
                     overflow: hidden;
+
                 }
 
                 .chat_messenger {
                     width: calc(100% - 40px);
                     padding: 10px;
-                    background-color: rgba(255, 255, 255, 0.9);
+                    background-color: rgba(255, 255, 255, 0.7);
 
                     .messenger {
                         width: 100%;
@@ -150,6 +172,7 @@
                             color: rgba(0, 0, 0, 1);
                             margin-right: 6px;
                         }
+
                         img {
                             width: 250px;
                             height: auto;
@@ -186,7 +209,7 @@
             .chat_footer {
                 width: 100%;
                 height: 55px;
-                background: linear-gradient(90deg, rgb(255, 119, 0), rgb(157, 10, 255));
+                background: radial-gradient(circle, #1f4f96, #1b2949, #000);
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -208,9 +231,14 @@
                         font-family: 'Lexend Exa', sans-serif;
                         font-weight: 500;
                         font-size: 16px;
-                        color: rgba(0, 0, 0, 0.5);
+                        color: rgb(0, 0, 0);
                         margin-right: 10px;
-                    }
+                        outline: white;
+                      
+                    }  .chat_input::placeholder{
+                            color: rgb(0, 0, 0);
+                        }
+
 
                     .form_buttom {
                         width: 20%;
@@ -219,6 +247,17 @@
                         border: 1px solid #000000;
                         display: flex;
                         justify-content: space-between;
+                    }
+                    .input__di{
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgb(253, 253, 253);
+                        border: none;
+                        font-family: 'Lexend Exa', sans-serif;
+                        font-weight: 500;
+                        border: none;
+                        font-size: 16px;
+                        color: rgba(0, 0, 0, 1);
                     }
 
                     .input_button {
@@ -229,6 +268,7 @@
                         font-family: 'Lexend Exa', sans-serif;
                         font-weight: 500;
                         font-size: 16px;
+                        border: none;
                         color: rgba(0, 0, 0, 0.5);
                     }
                 }
@@ -244,22 +284,23 @@
 
             .chat_online {
                 width: 100%;
-                height: 60%;
+                height: calc(50% - 10px);
+                margin-bottom: 10px;
 
                 .online_header {
                     width: 100%;
-                    height: 25px;
+                    height: 10%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background-color: rgb(157, 10, 255);
+                    background: radial-gradient(circle, #1f4f96, #1b2949, #000);
                     position: static;
 
                     p {
                         font-family: 'Lexend Exa', sans-serif;
                         font-weight: 500;
                         font-size: 16px;
-                        color: rgba(255, 255, 255, 0.7);
+                        color: rgb(255, 255, 255);
                     }
                 }
 
@@ -271,7 +312,7 @@
                     .online_user {
                         margin-top: 12px;
                         width: 100%;
-                        height: 45px;
+                        height: 35px;
                         padding: 10px;
                         display: flex;
                         align-items: center;
@@ -287,8 +328,8 @@
                         }
 
                         .line {
-                            width: 20px;
-                            height: 20px;
+                            width: 17px;
+                            height: 17px;
                             background-color: rgb(0, 255, 0);
                             border: 3px solid green;
                             border-radius: 50%;
@@ -305,22 +346,23 @@
 
             .chat_offline {
                 width: 100%;
-                height: 40%;
+                height: calc(50% - 10px);
+                margin-bottom: 10px;
 
                 .online_header {
                     width: 100%;
-                    height: 25px;
+                    height: 10%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background-color: rgb(157, 10, 255);
+                    background: radial-gradient(circle, #1f4f96, #1b2949, #000);
                     position: static;
 
                     p {
                         font-family: 'Lexend Exa', sans-serif;
                         font-weight: 500;
                         font-size: 16px;
-                        color: rgba(255, 255, 255, 0.7);
+                        color: rgb(255, 255, 255);
                     }
                 }
 
@@ -332,7 +374,7 @@
                     .online_user {
                         margin-top: 12px;
                         width: 100%;
-                        height: 45px;
+                        height: 35px;
                         padding: 10px;
                         display: flex;
                         align-items: center;
@@ -348,8 +390,8 @@
                         }
 
                         .line {
-                            width: 20px;
-                            height: 20px;
+                            width: 17px;
+                            height: 17px;
                             background-color: rgb(255, 0, 0);
                             border: 3px solid rgb(130, 16, 16);
                             border-radius: 50%;
@@ -363,6 +405,42 @@
                 }
             }
 
+        }
+    }
+
+    .modal_img-zoom {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+        padding: 50px 200px;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(255, 255, 255);
+            z-index: 50;
+            margin: 50px 150px;
+            border-radius: 50%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .modal_img_img {
+            width: 100%;
+            height: 100%;
         }
     }
 

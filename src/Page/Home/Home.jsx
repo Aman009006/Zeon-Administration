@@ -52,6 +52,7 @@ const Home = () => {
     //   </div>
     // </div>
     <div className="home_wrapper">
+
       
       <div class="stage">
         <div class="layer"></div>
@@ -79,6 +80,7 @@ const Home = () => {
         <span>
           <Link to="/" className="elegantshadow">
             NEWS
+
           </Link>
         </span>
       </div>

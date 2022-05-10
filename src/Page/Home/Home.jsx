@@ -15,7 +15,7 @@ const Home = () => {
           onMouseEnter={() => setIsActive1(true)}
           onMouseLeave={() => setIsActive1(false)}
         >
-          <Link to="/" className="news">
+          <Link to="/news" className="news">
             НОВОСТИ
           </Link>
         </span>

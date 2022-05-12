@@ -93,7 +93,7 @@ const Home = () => {
       </div>
       <div className="user_block">
         <span>
-          <Link to="/" className="deepshadow">
+          <Link to="/user" className="deepshadow">
             USERS
           </Link>
         </span>

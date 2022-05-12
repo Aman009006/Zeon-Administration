@@ -424,16 +424,16 @@ body {
 }
 
 .layer:nth-child(n+11):after {
-  -webkit-text-stroke: 15px dodgerblue;
-  text-shadow: 6px 0 6px #00366b, 5px 5px 5px #002951, 0 6px 6px #00366b;
+  -webkit-text-stroke: 15px rgb(110, 110, 110);
+  text-shadow: 6px 0 6px #4a4a4a, 5px 5px 5px #333333, 0 6px 6px #343434;
 }
 
 .layer:nth-child(n+12):after {
-  -webkit-text-stroke: 15px #0077ea;
+  -webkit-text-stroke: 15px #3b3b3b;
 }
 
 .layer:last-child:after {
-  -webkit-text-stroke: 17px rgba(0, 0, 0, 0.1);
+  -webkit-text-stroke: 17px rgba(52, 52, 52, 0.1);
 }
 
 .layer:first-child:after {

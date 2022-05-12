@@ -19,24 +19,120 @@ const Chat = () => {
     }
   }, [message]);
 
+   // MOBILE
+   const [active, setActive] = useState("nav__menu");
+   const [icon, setIcon] = useState("nav__toggler");
+   const navToggle = () => {
+     if (active === "nav__menu") {
+       setActive("nav__menu nav__active");
+     } else setActive("nav__menu");
+     if (icon === "nav__toggler") {
+       setIcon("nav__toggler toggle");
+     } else setIcon("nav__toggler");
+   };
+
   return (
     <section className="chat_wrapper">
       <div className="back_block">
         <button className="back_button">
           <Link to="/">
-          <div class="triangle-left"></div>
+            <div class="triangle-left"></div>
           </Link>
         </button>
         <button onClick={() => setCount(count + 1)} className="us_button">
           {count} <span>US</span>
         </button>
         <button className="back_button">
-          <Link to="/" >
-         <div class="triangle-right"></div>   
+          <Link to="/">
+            <div class="triangle-right"></div>
           </Link>
         </button>
       </div>
       <div className="chat_container">
+      <div className="mobile_mav">
+        <div onClick={navToggle} className={icon}>
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
+        </div>
+       
+      </div>
+      <div className={active}>
+        <div className="mobile_one">
+          <div onClick={navToggle} className={icon}>
+            <div className="line1"></div>
+            <div className="line2"></div>
+            <div className="line3"></div>
+          </div>
+          <div><p>CHAT</p></div>
+        </div>
+
+      </div>
+        <div className="chat_user">
+          <div className="chat_online">
+            <div className="online_header">
+              <p>chat</p>
+            </div>
+            <div className="online_scroll">
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+              <div className="online_user">
+                <p>Name</p>
+                <div className="line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="chat_block">
           <div className="chat_header">
             <p className="chat_text">GLOBAL CHAT</p>
@@ -91,71 +187,6 @@ const Chat = () => {
                 </button>
               </div>
             </form>
-          </div>
-        </div>
-
-        <div className="chat_user">
-          <div className="chat_online">
-            <div className="online_header">
-              <p> ONLINE 3</p>
-            </div>
-            <div className="online_scroll">
-              <div className="online_user">
-                <p>Name</p>
-                <div className="line"></div>
-              </div>
-              <div className="online_user">
-                <p>Name</p>
-                <div className="line"></div>
-              </div>
-              <div className="online_user">
-                <p>Name</p>
-                <div className="line"></div>
-              </div>
-              <div className="online_user">
-                <p>Name</p>
-                <div className="line"></div>
-              </div>
-              <div className="online_user">
-                <p>Name</p>
-                <div className="line"></div>
-              </div>
-              <div className="online_user">
-                <p>Name</p>
-                <div className="line"></div>
-              </div>
-            </div>
-          </div>
-          <div className="chat_offline">
-            <div className="online_header">
-              <p>LAST CHAT</p>
-            </div>
-            <div className="online_scroll">
-              <div className="online_user">
-                <p>Name</p>
-                <div className="line"></div>
-              </div>
-              <div className="online_user">
-                <p>Name</p>
-                <div className="line"></div>
-              </div>
-              <div className="online_user">
-                <p>Name</p>
-                <div className="line"></div>
-              </div>
-              <div className="online_user">
-                <p>Name</p>
-                <div className="line"></div>
-              </div>
-              <div className="online_user">
-                <p>Name</p>
-                <div className="line"></div>
-              </div>
-              <div className="online_user">
-                <p>Name</p>
-                <div className="line"></div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
